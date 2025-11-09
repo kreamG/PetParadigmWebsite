@@ -1,0 +1,237 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #003B6D;
+    color: white;
+}
+
+.logo1 img {
+    height: 70px;
+    width: auto;
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.search-bar input {
+    padding: 0.4rem 0.6rem;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    outline: none;
+}
+
+.search-bar input:focus {
+    border-color: black;
+}
+
+.search-bar button {
+    padding: o.4rem 0.8rem;
+    border: none;
+    background: #BDBDBD;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background: #666;
+}
+
+body {
+    margin: 0;
+    background-color: #6699CC;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-container {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  <-- Orignial */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.home-card {
+    /* display: flex; */
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 1rem;
+    background: #BDBDBD;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 1rem;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.feature {
+    grid-column: 1 / -1;
+}
+
+.home-card img {
+    height: auto;
+    width: 100px;
+    float: left;
+    border-radius: 8px;
+    margin: 0 1rem 1rem 0;    
+}
+
+.card h2 {
+    margin: 1rem 0 0.9rem;
+}
+
+/* .home-card p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+} */
+
+.card {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+    background: #BDBDBD;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 1rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    font-size: 0.9rem;
+    line-height: 1.5;;
+}
+
+.card-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card-content a:link, .card-content a:visited {
+    color: #003B6D;
+    text-decoration: none;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #6699CC;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.contact-btn:hover {
+    background: #676767;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.home-card a:link, .home-card a:visited {
+    color: #003B6D;
+    text-decoration: none;
+}
+
+.container {
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container form {
+    width: 670px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+    flex-wrap: wrap;
+}
+
+.container form h2 {
+    color: #000;
+    font-weight: 700;
+    line-height: 2;
+    margin-top: 20px;
+    width: 500px;
+    text-align: center;
+}
+
+.container form input {
+    width: 300px;
+    height: 50px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+.container form input::placeholder {
+    color: #fff;
+}
+
+.container form #lastName,
+.container form #phoneNumber,
+.container form #petName,
+.container form #petAge {
+    margin-left: 20px;
+}
+
+.container form #submitBtn {
+    border: none;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 26px;
+    color: #000;
+    width: 200px;
+    height: 60px;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.container form #submitBtn:hover {
+    background: #000;
+    color: #fff;
+}
