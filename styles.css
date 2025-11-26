@@ -32,6 +32,11 @@ nav a:hover {
     text-decoration: underline;
 }
 
+nav a.active {
+    color: #666;
+    font-weight: bold;
+}
+
 .search-bar {
     display: flex;
     align-items: center;
